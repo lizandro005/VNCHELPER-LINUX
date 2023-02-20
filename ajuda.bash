@@ -1,7 +1,5 @@
 #!/bin/bash
 
-nohup anydesk &
-
 current_date=$(date +"%m-%d-%Y %T")
 
 disk_usage=$(df -h | awk '$NF=="/"{printf "%s\t\t", $5}')
@@ -20,4 +18,4 @@ echo -e "Date and time: $current_date\nDisk usage: $disk_usage\nUptime: $uptime\
 
 wait $!
 
-rm ~/Documents/anydeskhelp.txt
+
