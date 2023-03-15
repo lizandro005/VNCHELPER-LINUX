@@ -14,8 +14,8 @@ ram_usage=$(free | awk '/Mem/{printf("%.2f%%"), $3/$2*100}')
 
 top_process=$(ps aux --sort=-%cpu | awk 'NR<=3{print $11}')
 
-echo -e "Date and time: $current_date\nDisk usage: $disk_usage\nUptime: $uptime\nRAM usage: $ram_usage\nTop process: $top_process" > ~/Documents/anydeskhelp.txt
+echo -e "Date and time: $current_date\nDisk usage: $disk_usage\nUptime: $uptime\nRAM usage: $ram_usage\nTop process: $top_process" > ~/Documents/VNCHELPER.txt
 
-wait $!
+#wait $!
 
 
